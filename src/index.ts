@@ -3,4 +3,5 @@
 // import "./inherit.ts";
 // import "./super";
 // import "./abstractClass";
-import "./interface";
+// import "./interface";
+import "./generics";

@@ -1,2 +1,3 @@
 // import "./class.ts";
-import "./constructurFn";
+// import "./constructurFn";
+import "./inherit.ts";

@@ -2,4 +2,5 @@
 // import "./constructurFn";
 // import "./inherit.ts";
 // import "./super";
-import "./abstractClass";
+// import "./abstractClass";
+import "./interface";

@@ -59,7 +59,16 @@ module.exports = {
         include: path.resolve(__dirname, 'src'),
         // 要排除的文件
         exclude: /node-modules/
-      }
+      },
+	  // 設置 less 文件的處理
+	  {
+		test: /\.less$/,
+		use: [
+			'style-loader',
+			'css-loader',
+			'less-loader'
+		]
+	  }
     ]
   },
   plugins: [

@@ -60,15 +60,31 @@ module.exports = {
         // 要排除的文件
         exclude: /node-modules/
       },
-	  // 設置 less 文件的處理
-	  {
-		test: /\.less$/,
-		use: [
-			'style-loader',
-			'css-loader',
-			'less-loader'
-		]
-	  }
+      // 設置 less 文件的處理
+      {
+        test: /\.less$/,
+        use: [
+          'style-loader',
+          'css-loader',
+          // 引入 postcss
+          {
+            loader: "postcss-loader",
+            options: {
+              postcssOptions: {
+                plugins: [
+                  [
+                    "postcss-preset-env",
+                    {
+                      browsers: "last 2 versions"
+                    }
+                  ]
+                ]
+              }
+            }
+          },
+          'less-loader'
+        ]
+      }
     ]
   },
   plugins: [

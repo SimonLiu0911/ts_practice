@@ -1,12 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
 </head>
+
 <body>
-  
+  <div id="main">
+    <!-- 設置遊戲的舞台 -->
+    <div id="stage">
+      <!-- snake內部的div，表示蛇的各部分 -->
+      <div class="snake"></div>
+
+      <div class="food"></div>
+    </div>
+    <!-- 設置遊戲的積分台 -->
+    <div id="score" class="score-panel">
+      <div>
+        SCORE: <span class="score">0</span>
+      </div>
+      <div>
+        LEVEL: <span class="level">1</span>
+      </div>
+    </div>
+  </div>
 </body>
+
 </html>

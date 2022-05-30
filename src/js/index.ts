@@ -6,5 +6,4 @@
 // import "./js/interface";
 // import "./js/generics";
 
-import "../style/index.less";
-import "../js/project1";
+import "./project";
